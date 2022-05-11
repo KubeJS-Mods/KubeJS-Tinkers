@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[32,)"
+issueTrackerURL = "https://github.com/KubeJS-Mods/KubeJS-Tinkers/issues"
+license = "GNU LGPLv3"
+
+[[mods]]
+modId = "kubejs_tinkers_construct"
+version = "${version}"
+displayName = "KubeJS Tinkers Construct"
+authors = "LatvianModder"
+description = '''
+KubeJS Tinkers integration
+'''
+license = "GNU LGPLv3"
+
+[[dependencies.kubejs_tinkers_construct]]
+modId = "kubejs"
+mandatory = true
+versionRange = "[1802.5.2-build.407,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs_tinkers_construct]]
+modId = "tconstruct"
+mandatory = true
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
